@@ -74,7 +74,7 @@ btnAbout.addEventListener("click", function () {
         }
         curStep=3;
         camTar = [1.5, 4, 5];
-        dialog('I am Lorenz Falkson, a Designer currently based in Hamburg, Germany.  This Year, I received my Bachelor`s Degree in Communications Design. Yap Yap Yap 3D Animation, Fashion, Product Design and Web Development.');
+        dialog('I am Lorenz Falkson, a Designer currently based in Hamburg, Germany.  In 2024 Year, I received my Bachelor`s Degree in Communications Design. Since then i work freelance in animation, fashion design, product design and web development.');
  });
 btnContact.addEventListener("click", function () {
         btnContact.textContent="I still wanna get in Touch";
