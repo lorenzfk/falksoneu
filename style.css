@@ -1,0 +1,224 @@
+*{
+  padding:0;
+  box-sizing:border-box;
+  margin:0;
+  otline: .5px dashed blue;
+  overflow-x:hidden;
+  font-family: "Frank Ruhl Libre", serif;
+  -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+.frank {
+  font-family: "Frank Ruhl Libre", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+#itemInfoContainer{
+  width:100%;
+  text-align:left;
+  border-radius:0!important;
+}
+.dialog-text::before{
+  left:0;
+  top:29px;
+  content:"";
+  background:white;
+  mix-blend-mode:screen;
+  filter:blur(2px);
+  position:absolute;
+  bborder-radius: 0  5px 0 0;
+  width:calc(100% - 10px);
+  left:5px;
+  height:10px;
+}
+
+.dialog-text, #itemInfo, h5{
+  font-size:16px;
+  line-height:1.5rem;
+  bborder-radius: 0 10px 0 0;
+  width:100%;
+  padding: 1.5rem 1.5rem 1.0rem 1.5rem;
+  white-space: pre-wrap;
+  letter-spacing:.5px;
+  -webkit-hyphens:manual;
+  word-spacing: -.2ch;
+  border-bottom:1px solid black;
+  
+}
+.dialog-name{
+  font-style:italic;
+  font-weight:bolder;
+  letter-spacing:1.4px;
+  padding: .4rem .8rem 0 .7rem;
+  bbackground: rgb(87,137,144);
+  background:white;
+  mmargin-bottom:5px;
+  border-radius: 0 10px 0 0;
+}
+#btnSkip{
+  margin-top:0;
+  bborder-radius: 0  0 10px 0 ;
+}
+.dialog-box a{
+  line-height:2rem;
+  padding-left:10px;
+  padding-right:10px;
+}
+.dialog-box button, #closeItems, #moreInfo{
+  width:100%;
+  background:white;
+  margin-top:10px;
+  color:black;
+  bbox-shadow:5px 5px 5px black;
+  animation: 'jump' 3s 1s infinite;
+  transition:.1s;
+  padding-left:1rem;
+  padding-top:.4rem;
+  padding-bottom:.2rem;
+  border:none;
+  border-bottom:1px solid black;
+  
+  text-align:left;
+  font-size:1em;
+}
+.dialog-box button:hover, #closeItems:hover, #moreInfo:hover{
+  filter: contrast(130%);
+}
+.optbtn::after{
+  content:"!";
+}
+@keyframes jump{
+  10%{transform:translateY(-5px)}
+  20%{transform:translateY(2px) scaleY(80%)}
+  40%{transform:translateY(0) scaleY(100%)}
+}
+.dialog-box a:hover{
+  text-decoration:underline;
+}
+.minim{
+  scale:0;
+  overflow:visible;
+  height:0;
+  position:absolute;
+}
+.dialog-box{
+  overflow:visible;
+  flex-grow: 1;
+  ffilter:saturate(180%) contrast(130%) drop-shadow(3px 4px 3px RGBA(0,0,0,0.7));
+  transform:scaleY(120%);
+  max-width:800px;s
+  margin:auto;
+  margin-top:15rem;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition:.6s;
+}
+.grad{
+  background:white;
+ 
+}
+#main-container{
+  padding:3rem;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#main-container, #three{
+  position:fixed;
+  width:100vw;
+  top:0;
+  height:100vh;
+  background:;
+}
+h1{
+  mix-blend-mode: exclusion;
+  transform:scaleY(1.2);
+  font-weight:normal;
+  padding:1rem;
+  
+}
+#loading{
+  left:50%;
+  position:fixed;
+  z-index:-1;
+  top:50%;
+  transform:translateX(-50%);
+}
+#three{
+  filter:contrast(90%) brightness(115%) saturate(120%) hue-rotate(10deg);
+  transform-origin:top left;
+  scale:4;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  z-index:3;
+  pointer-events:none;
+}
+#top-bar{
+  position:fixed;
+  top:0;
+  width:100vw;
+  left:0;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  z-index:2;
+}
+bar a{
+  font-size:24px;
+  padding-left:10px;
+  padding-right:10px;
+}
+#bottom-bar{
+  padding:1rem;
+  position:fixed;
+  bottom:0;
+  width:100vw;
+  left:0;
+  display:flex;
+  opacity:0;
+  flex-direction:row;
+  justify-content:space-between;
+  z-index:-5;
+}
+
+#item-select{
+  ffilter:contrast(130%) drop-shadow(3px 4px 3px RGBA(0,0,0,0.7));
+  transition.4s;
+  position:fixed;
+  z-index:5;
+  width:100vw;
+  height:100vh;
+  left:50%;
+  transform:translateX(-50%);
+  max-width:600px;
+  top:0;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:20px;
+}
+.selBtns{
+  ffilter:drop-shadow(3px 4px 3px RGBA(0,0,0,0.7));
+  display:flex;
+  align-items:center;
+  width:100%;
+  justify-content:space-between;
+  animation: 'jump' 2s infinite;
+}
+
+.selBtns button{
+  font-size:4rem;
+  overflow:visible;
+  color:yellow;
+  mix-blend-mode:difference;
+  background:none;
+  border:none;
+}
